@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="subpaginas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Contato</title>
+</head>
+
+<section class="main">
+    <div class="center">
+        <div class="menu">
+            <div class="logo-menu">
+                <a href=""><img src="./images/LogoModelle.jpeg" /></a>
+            </div>
+            <div class="itens-menu">
+                <a onclick="atualiza()" href="index.html">Inicio</a>
+                <a onclick="tshirts()" href="tshirts.html">T-Shirts</a>
+                <a onclick="academia()" href="academia.html">Academia</a>
+                <a onclick="contato()" href="contato.html">Entre em Contato</a>
+            </div>
+            <div class="itens-menu-mobile">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <div class="menu-mobile">
+                    <a onclick="atualiza()" href="index.html">Inicio</a>
+                    <a onclick="tshirts()" href="tshirts.html">T-Shirts</a>
+                    <a onclick="academia()" href="academia.html">Academia</a>
+                    <a onclick="contato()" href="contato.html">Entre em Contato</a>
+                </div>
+            </div>
+        </div><!--menu-->
+    </div>  
+
+    <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5583988025519" target="_blank">
+        <i class="fa fa-whatsapp"></i></a>
+
+    <div class="contato">
+        <div class="logo-zap">
+            <img src="./images/zap.webp" width="50px" />
+        </div>
+        <div class="numero">(83) 9 8802-5519</div>
+        
+    </div>
+
+    <div class="contato">
+        <div class="logo-zap">
+            <img src="./images/insta.webp" width="50px" />
+        </div>
+        <div class="numero">@modelle</div>
+        
+    </div>
+    
+</section>
+
+<footer>
+    <div style="max-whidt:1280px;" class="center">
+        <div class="text-footer">
+            <p>Todos os direitos reservados a Daniel Alves</p>
+        </div>
+    </div>
+</footer>
+
+<script src="jquery.js"></script>
+<script src="slick.min.js"></script>
+<script>
+        $('.container-slider').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            centerMode: true,
+            centerPadding:0,
+            speed: 1000,
+            slidesToShow: 3,
+            sliderToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        sliderToScroll: 1
+                    }
+                }],    
+        });
+    
+</script>
+<script>
+    var menuBtn = document.querySelector('.itens-menu-mobile i');
+    menuBtn.addEventListener('click',()=>{
+        let itensMenu = document.querySelector('.menu-mobile');
+        if(itensMenu.classList.contains('show')){
+            itensMenu.classList.remove('show');
+            itensMenu.classList.add('hidden');
+        }else{
+            itensMenu.classList.remove('hidden');
+            itensMenu.classList.add('show');
+        }
+        
+    });
+
+</script>
+
+<script src="script.js"></script>

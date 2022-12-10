@@ -1,0 +1,187 @@
+section.porque-nos h2, p{
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: #94477a;
+    border-radius: 5%;
+    color: white;
+}
+.mockup img{
+    margin-left: 6px;
+}   
+.mockup h1{
+    font-size: 60px;
+}
+section.porque-nos .center {
+    max-width: 1100px;
+}
+.box-diferenciais p{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+.box-diferenciais h3{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+section.cta{
+    background-image: url(./images/pexels-porapak-apichodilok-346752.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+    min-height: 200px;
+    color: white;
+    text-align: center;
+}
+.contato{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    background-color: azure;
+    max-width: 20%;
+    margin-left: 500px;
+    border-radius:3%;
+   
+}
+
+.contato .numero{
+    display: flex;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.contato .numero{
+    display: flex;
+    font-size: 20px;
+    margin-top: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+footer p{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+footer{
+    background-color: black;
+}
+.whatsapp-link{
+    position: fixed;
+    width: 1.75em;
+    height: 1.75em;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+.fa-whatsapp{
+   margin-top: 10px;
+  
+}
+.itens-menu-mobile{
+    display: none;
+    width: 50%;
+    text-align: right;
+}
+.itens-menu-mobile i{
+    color: white;
+    position: relative;
+    top:15px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+@media  screen and (max-width: 768px){
+
+    .itens-menu-mobile{
+        display: block;
+        
+    }
+    .menu-mobile{
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        left: 0;
+        top:65px;
+        background-color: white;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .show{
+        opacity: 1;
+    }
+    .hidden{
+        opacity: 0;
+    }
+
+    .menu-mobile a{
+        text-align: center;
+        display: block;
+        margin: 10px 0;
+        color: #0f3fd3;
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom: 1px solid rgb(40, 40, 40);
+        padding: 8px 0;
+        font-size: 15px;
+    }
+    section.main .itens-menu{
+        display: none;
+    }
+
+    footer .itens-menu{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    footer .itens-menu a{
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+            
+    }
+    .text-footer{
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+   
+    .lista-beneficios, .img-beneficios{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+       
+    .diferenciais{
+        flex-wrap: wrap;
+    }
+    .box-diferenciais{
+        width: 100%;
+        margin-right: 0;
+        
+    }
+    
+    section.marcas > .center{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.marcas img{
+        max-width: 300px;
+        width: 100%;
+    }
+}
